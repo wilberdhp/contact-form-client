@@ -1,0 +1,96 @@
+h1 {
+  margin-bottom: 45px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.span-sending-email {
+  height: 22px;
+  margin-bottom: 5px;
+}
+
+form {
+  width: 530px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  z-index: 1;
+
+  @media (width <= 660px) {
+    width: 80%;
+  }
+}
+
+label {
+  width: 100%;
+  font-size: 13px;
+  
+}
+
+label.incomplete {
+  color:#ff1919;
+}
+
+label.completed {
+  color:#0a9c00;
+}
+
+input, textarea {
+  width: 100%;
+  border: 1px solid #9c9a9a;
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 17px;
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  border: 2px solid #747373;
+}
+
+input {
+  height: 40px;
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 9px 15px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #ff1919;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity .3s ease;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* Warning Modal */
+.title-modal.warning {
+  color: orangered
+}
+
+.warning-info {
+  padding: 5px;
+}
+
+.warning-info p {
+  margin: 7px 0;
+}

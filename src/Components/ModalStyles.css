@@ -1,0 +1,39 @@
+dialog {
+  min-height: 100dvh;
+  width: 100dvw;
+  background-color: rgba(255, 255, 255, 0.607);
+  border: none;
+  z-index: 9999;
+}
+
+.modal-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  background-color: white;
+  border-radius: 10px;
+  width: 350px;
+  height: 300px;
+  padding: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.299);
+}
+
+.modal-container.warning-modal {
+  min-width: fit-content;
+  height: fit-content;
+}
+
+.title-modal {
+  margin-bottom: 30px;
+}
+
+.btn-close-modal {
+  margin-top: 15px;
+  opacity: 1;
+}
