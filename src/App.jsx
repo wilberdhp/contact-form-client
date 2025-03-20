@@ -101,7 +101,7 @@ function App() {
       </Modal>
       
       <h1>Contact Me</h1>
-      <span className='span-sending-email'>{disabledBtnSendEmail ? "Enviando..." : ""}</span>
+      <span className='span-sending-email'>{disabledBtnSendEmail ? "Sending..." : ""}</span>
       <form onSubmit={handleSubmit}>
 
         <LabelInput 
